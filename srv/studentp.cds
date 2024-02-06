@@ -5,6 +5,11 @@ service studentservice {
 
 }
 
+annotate studentservice.Student with {
+    name      @assert.format: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$';
+   
+}
+
 annotate studentservice.Student with @odata.draft.enabled;
 
 annotate studentservice.Student with @(

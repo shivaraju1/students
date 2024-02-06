@@ -5,6 +5,6 @@ entity Student:cuid,managed {
     @title:'Student id'
     sid:String(10);
     @title:'Student name'
-    name:String(10);
+    name:String(40) @mandatory;
    
 }
